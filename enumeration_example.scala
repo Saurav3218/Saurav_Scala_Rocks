@@ -22,3 +22,31 @@ object Main extends Enumeration
         println(s"ID of third = ${Main.third.id}")
     }
 }
+
+"""
+// Scala program of Matching values in enumeration
+  
+// Creating Enumeration
+object Main extends Enumeration 
+{
+    type Main = Value
+      
+    // Assigning Values
+    val first = Value("Thriller")
+    val second = Value("Horror")
+    val third = Value("Comedy")
+    val fourth = Value("Romance")
+      
+    // Main Method 
+    def main(args: Array[String]) 
+    {
+        Main.values.foreach
+        {
+            // Matching values in Enumeration
+            case d if ( d == Main.third ) => 
+            println(s"Favourite type of Movie = $d")
+            case _ => None
+        } 
+    }
+}
+"""
