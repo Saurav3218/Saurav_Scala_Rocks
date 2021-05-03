@@ -34,3 +34,24 @@ object PatternMatching {
 
 
 }
+
+'''
+object PatternMatching {
+
+  // main method
+    def main(args: Array[String]) {
+    println(test("Saurav"))
+
+    }
+
+def test(x:String):String= x match {
+  case "G1"=>"Geeks"
+  case "G2" =>"Scala Examples"
+  case _=> "Default Case Executed"
+}
+
+
+
+
+}
+'''
